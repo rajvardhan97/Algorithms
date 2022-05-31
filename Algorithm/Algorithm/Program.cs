@@ -6,7 +6,7 @@ namespace AlgorithmProblem
         public static void Main(string[] args)
         {
             Console.WriteLine("\nPress 1.to Calculate Permutation using Recursion &Iterative Method of a string" +
-                "\n2.Insertion Sort");
+                "\n2.Insertion Sort \n3. Bubble Sort");
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
             {
@@ -31,6 +31,10 @@ namespace AlgorithmProblem
                         array.Add(Convert.ToInt32(Console.ReadLine()));
                     }
                     Sorting.InsertionSorting(array);
+                    break;
+                case 3:
+                    List<int> arr1 = BubbleSort.ArrayInput();
+                    BubbleSort.BubbleSorting(arr1);
                     break;
             }
         }
