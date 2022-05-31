@@ -36,6 +36,10 @@ namespace AlgorithmProblem
                     List<int> arr1 = BubbleSort.ArrayInput();
                     BubbleSort.BubbleSorting(arr1);
                     break;
+                case 4:
+                    AnagramCheck.Anagram();
+                    break;
+                  
             }
         }
     }
