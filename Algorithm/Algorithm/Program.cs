@@ -39,7 +39,9 @@ namespace AlgorithmProblem
                 case 4:
                     AnagramCheck.Anagram();
                     break;
-                  
+                case 5:
+                    PrimeNumbersInRange.PrimeNumbers();
+                    break;
             }
         }
     }

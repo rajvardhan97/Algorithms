@@ -180,5 +180,27 @@ namespace AlgorithmProblem
             }
         }
     }
-    
+    class PrimeNumbersInRange
+    {
+        public static void PrimeNumbers()
+        {
+            int num, i, counter;
+            for (num = 0; num <= 1000; num++)
+            {
+                counter = 0;
+                for (i = 2; i <= num / 2; i++)
+                {
+                    if (num % i == 0)
+                    {
+                        counter++;
+                        break;
+                    }
+                }
+
+                if (counter == 0 && num != 1)
+                    Console.Write("{0} ", num);
+            }
+            Console.Write("\n");
+        }
+    }
 }
